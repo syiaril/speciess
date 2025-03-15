@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scout Linktree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        function animateLinks() {
+            document.querySelectorAll('.link-button').forEach(button => {
+                button.addEventListener('mouseenter', () => {
+                    button.classList.add('scale-105');
+                });
+                button.addEventListener('mouseleave', () => {
+                    button.classList.remove('scale-105');
+                });
+            });
+        }
+        document.addEventListener('DOMContentLoaded', animateLinks);
+    </script>
+</head>
+<body class="bg-[#FB6600] flex items-center justify-center min-h-screen px-4">
+    <div class="w-full max-w-md bg-white p-6 rounded-2xl shadow-2xl text-center transform transition-all hover:scale-105">
+        <img src="logo species.png" alt="Scout Avatar" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-[#FB6600] shadow-md">
+        <h1 class="text-2xl font-bold text-gray-900">SPECIES</h1>
+        <p class="text-gray-600 italic ">"Satyaku Ku Darmakan, Dharmaku Kubaktikan"</p>
+        <p class="text-gray-700 text-sm">Ambalan Untung Suropati - Dewi Sartika</p>
+        <p class="text-gray-700 text-sm">Gugus Depan 04.085 - 04.086</p>
+        <p class="text-gray-700 text-sm mb-2">Berpangkalan di SMKN 1 Pasuruan</p>
+        
+        <div class="space-y-3">
+            <a href="https://www.youtube.com/@pramukasmkn1pasuruan866" target="_blank" class="flex items-center justify-center gap-2 w-11/12 md:w-full py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 link-button transition-all">
+                <i class="fab fa-youtube text-xl"></i> YouTube
+            </a>
+            <a href="https://www.instagram.com/pramuka.smkn1pas" target="_blank" class="flex items-center justify-center gap-2 w-11/12 md:w-full py-3 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-600 link-button transition-all">
+                <i class="fab fa-instagram text-xl"></i> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@speciessmkn1pasuruan" target="_blank" class="flex items-center justify-center gap-2 w-11/12 md:w-full py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 link-button transition-all">
+                <i class="fab fa-tiktok text-xl"></i> TikTok
+            </a>
+        </div>
+    </div>
+</body>
+</html>
